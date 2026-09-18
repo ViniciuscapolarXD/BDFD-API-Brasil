@@ -1,0 +1,22 @@
+﻿{
+  "name": "bdfd-api-brasil",
+  "main": "src/worker.js",
+  "base_dir": "src",
+  "compatibility_date": "2026-09-17",
+  "no_bundle": true,
+  "find_additional_modules": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "YOUR_D1_DATABASE_NAME",
+      "database_id": "YOUR_D1_DATABASE_ID"
+    }
+  ],
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": ["lib/**/*.js", "routes/**/*.js", "services/**/*.js"],
+      "fallthrough": true
+    }
+  ]
+}
